@@ -26,6 +26,7 @@ import com.vaadin.flow.component.html.Footer;
 import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.html.H2;
 import com.vaadin.flow.component.html.Header;
+import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.router.PageTitle;
 
 /**
@@ -60,7 +61,8 @@ public class MainLayout extends AppLayout {
         appName.addClassNames("app-name");
 
         com.vaadin.flow.component.html.Section section = new com.vaadin.flow.component.html.Section(appName,
-                createNavigation(), createFooter());
+                createNavigation(), createFooter(),
+                new Paragraph("Spring version = " + org.springframework.core.SpringVersion.getVersion()));
         section.addClassNames("drawer-section");
         return section;
     }

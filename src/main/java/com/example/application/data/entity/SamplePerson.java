@@ -1,7 +1,8 @@
 package com.example.application.data.entity;
 
 import java.time.LocalDate;
-import javax.persistence.Entity;
+
+import jakarta.persistence.Entity;
 
 @Entity
 public class SamplePerson extends AbstractEntity {
